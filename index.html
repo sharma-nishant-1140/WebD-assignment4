@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURVEY</title>
+    
+    <link rel="stylesheet" href="survey.css">
+    <style>
+        @media (max-width: 600px){
+            .main-body{
+                width: 100%;
+                text-align: center;
+                font-size: 12px;
+            }
+            .fieldset0{
+                width: 100px;
+                background-color: tomato;
+                border: 3px solid;
+                border-radius: 100px;
+            }
+            .fieldset1{
+                width: 200px;
+                background-color: white;
+                border: 1px solid;
+                border-top-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+            .fieldset2{
+                width: 200px;
+                background-color: tomato;
+                border: 1px solid;
+                border-top-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                text-size-adjust: 16px;
+            }
+            .fieldset3{
+                width: 200px;
+                background-color: white;
+                border: 1px solid;
+                border-top-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+            .fieldset4{
+                width: 200px;
+                background-color: tomato;
+                border: 1px solid;
+                border-top-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+            .quafield{
+                text-align: center;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: 1px solid;
+            }
+            .valfield{
+                text-align: center;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: 1px solid;
+            }
+            .delfield{
+                text-align: center;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: 1px solid;
+            }
+            .sub-button{
+                background-color: white;
+                block-size: 30px;
+                width: 70px;
+                border: 3px;
+                border-style: outset;
+            }
+        }
+    </style>
+</head>
+<body class="main-body">
+    <div align="center">
+        <fieldset class="fieldset0">
+        <h2>SURVEY</h2>
+        </fieldset>
+    </div>
+    <form class="form1" action="https://enw7u145b8im9.x.pipedream.net/" method="post">
+
+        <div class="name-section" align="center">
+            <fieldset class="fieldset1">
+                <legend align="center"><b>NAME</b></legend>
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" name="lname" id="lname" required><br>
+            </fieldset>
+        </div>
+
+        <div align="center">
+            <fieldset class="fieldset2">
+                <legend align="center"><b>ADDRESS</b></legend>
+                <label for="street"></label>
+                <input type="text" name="street" placeholder="Street" required><br><br>
+                <input type="text" name="city" placeholder="City" required><br><br>
+                <input type="text" name="state" placeholder="State" required><br><br>
+                <input type="number" name="pinc" placeholder="Pin Code" required>
+            </fieldset>
+        </div>
+
+        <div align="center">
+            <fieldset class="fieldset3">
+                <legend align="center"><b>CONTACT DETAILS</b></legend>
+                <label for="phno">Phone no:</label><br>
+                <input type="number" name="phno" id="phno" required>
+            </fieldset>
+        </div>
+
+        <div align="center">
+            <fieldset align="center" class="fieldset4">
+                <legend><b>RATE US</b></legend>
+                <table align="center">
+                    <td bgcolor="white">
+                        <fieldset align="right" class="quafield">
+                        <label for="qop"><b><i>Quality Of Products Received:</i></b></label><hr>
+                        <label for="exc1">Excellent</label>
+                        <input type="radio" name="qop" id="exc1" required><br>
+                        <label for="good1">Good</label>
+                        <input type="radio" name="qop" id="good1" required><br>
+                        <label for="bad1">Bad</label>
+                        <input type="radio" name="qop" id="bad1" required>
+                        </fieldset>
+                    </td>
+                    <td bgcolor="white">
+                        <fieldset align="right" class="valfield">
+                        <label for="vom"><b><i>Value For Money:</i></b></label><hr>
+                        <label for="exc2">Excellent</label>
+                        <input type="radio" name="vom" id="exc2" required><br>
+                        <label for="good2">Good</label>
+                        <input type="radio" name="vom" id="good2" required><br>
+                        <label for="bad2">Bad</label>
+                        <input type="radio" name="vom" id="bad2" required>
+                        </fieldset>
+                    </td>
+                    <td bgcolor="white">
+                        <fieldset align="right" class="delfield">
+                        <label for="del"><b><i>Delivery:</i></b></label><hr>
+                        <label for="exc3">Excellent</label>
+                        <input type="radio" name="del" id="exc3" required><br>
+                        <label for="good3">Good</label>
+                        <input type="radio" name="del" id="good3" required><br>
+                        <label for="bad3">Bad</label>
+                        <input type="radio" name="del" id="bad3" required>
+                        </fieldset>
+                    </td>
+                </table>
+
+            </fieldset>
+        </div>
+
+        <div align="center">
+            <br><input type="submit" name="submit" class="sub-button">
+        </div>
+
+    </form>
+    
+</body>
+</html>
